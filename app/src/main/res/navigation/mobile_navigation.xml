@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/progressFragment"
         android:name="com.example.hackaton.ProgressFragment"
-        android:label="fragment_progress"
+        android:label="@string/achievements"
         tools:layout="@layout/fragment_progress" />
     <fragment
         android:id="@+id/mainFragment"

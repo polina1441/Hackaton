@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainFragment : Fragment() {
 
@@ -24,6 +28,9 @@ class MainFragment : Fragment() {
             navController.navigate(R.id.action_mainFragment_to_progressFragment)
         }
 
-        return root
+        /*val appBarConfiguration = AppBarConfiguration(setOf(
+                R.id.progressFragment))
+        setupActionBarWithNavController(navController,appBarConfiguration)*/
+                return root
     }
 }
