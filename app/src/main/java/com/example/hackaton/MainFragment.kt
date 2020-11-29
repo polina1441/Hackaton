@@ -23,7 +23,6 @@ class MainFragment : Fragment() {
         val start: Button = root.findViewById(R.id.start)
 
         val navController = requireActivity().findNavController(R.id.nav_host_fragment)
-
         start.setOnClickListener {
             navController.navigate(R.id.action_mainFragment_to_progressFragment)
         }

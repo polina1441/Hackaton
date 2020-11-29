@@ -30,8 +30,9 @@
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="TODO" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,23 +42,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit. Aenean
-        commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis
-        parturient montes, nascetur ridiculus mus.
-        Donec quam felis, ultricies nec, pellentesque
-        eu, pretium quis, sem."
+            android:text="1. Выбери задание\n2. Найди QR-код и отсканируй\n3. Изучи найденную информацию\n4. Победи в  викторине"
             android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:textSize="10pt"
-            android:scrollbars="vertical"/>
-    </ScrollView>
+            android:textColor="@color/text_color"
+            android:textSize="24sp"
+            android:paddingEnd="24dp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/start"
+        style="@style/TextAppearance.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:textColor="#fff"
         android:background="@color/koral"
         android:text="@string/start"
         android:textSize="12pt"
