@@ -1,4 +1,5 @@
 package com.example.hackaton
+import android.graphics.Matrix
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,13 +35,11 @@ class BlankFragment : Fragment() {
         val image = root.findViewById<ImageView>(R.id.icon)
         title.text = a?.name ?: "Неизвестно"
         about.text = a?.about ?: "Неизвестно"
-        //image.image = a?.name ?: R.drawable.not_image
-
+        image.setImageResource(a?.image ?: R.drawable.not_image)
 
 
         return root
     }
-
     companion object {
         fun newInstance(param1: String, param2: String) =
                 BlankFragment().apply {

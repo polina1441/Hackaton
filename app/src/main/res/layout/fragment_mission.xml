@@ -57,22 +57,22 @@
             </RelativeLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:padding="20dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Отсканируйте QR-код для получения информации!"
+            android:textColor="#403F3F"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hello_blank_fragment"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
