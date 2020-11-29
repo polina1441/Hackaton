@@ -30,5 +30,15 @@
         android:id="@+id/missionFragment"
         android:name="com.example.hackaton.BlankFragment"
         android:label="fragment_mission"
-        tools:layout="@layout/fragment_mission" />
+        tools:layout="@layout/fragment_mission" >
+        <action
+            android:id="@+id/action_missionFragment_to_QRActivity"
+            app:destination="@id/QRActivity"
+            app:popUpTo="@id/missionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRActivity"
+        android:name="com.example.hackaton.QRActivity"
+        android:label="qr_activity"
+        tools:layout="@layout/qr_activity" />
 </navigation>
