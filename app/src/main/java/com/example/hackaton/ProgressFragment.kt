@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,8 +23,16 @@ class ProgressFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_progress, container, false)
         val recyclerViewRealize : RecyclerView = root.findViewById(R.id.recyclerView)
 
-        recyclerViewRealize.adapter = RecyclerViewRealize()
+        recyclerViewRealize.adapter = RecyclerViewRealize(this)
         recyclerViewRealize.layoutManager = LinearLayoutManager(requireContext())
+
+//        val navController = requireActivity().findNavController(R.id.nav_host_fragment)
+//        val appBarConfiguration = AppBarConfiguration(setOf(
+//                R.id.progressFragment))
+//        setupActionBarWithNavController(navController, appBarConfiguration)
+
+
+
 
         return root
     }

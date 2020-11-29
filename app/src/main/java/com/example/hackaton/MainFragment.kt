@@ -27,10 +27,10 @@ class MainFragment : Fragment() {
         start.setOnClickListener {
             navController.navigate(R.id.action_mainFragment_to_progressFragment)
         }
+//        val appBarConfiguration = AppBarConfiguration(setOf(
+//                R.id.progressFragment))
+//        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        /*val appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.progressFragment))
-        setupActionBarWithNavController(navController,appBarConfiguration)*/
                 return root
     }
 }
